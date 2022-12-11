@@ -1,0 +1,77 @@
+{
+  "name": "apisix-website",
+  "repository": "https://github.com/apache/apisix-website.git",
+  "license": "Apache-2.0",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "website",
+      "scripts",
+      "blog",
+      "doc"
+    ],
+    "nohoist": [
+      "doc/@docusaurus/**"
+    ]
+  },
+  "scripts": {
+    "sync-docs": "yarn workspace scripts sync-docs",
+    "generate-repos-info": "yarn workspace scripts generate-repos-info",
+    "generate-picked-posts": "yarn workspace scripts generate-picked-posts",
+    "update-sitemap": "yarn workspace scripts update-sitemap",
+    "start:doc": "yarn workspace doc start",
+    "start:website": "yarn workspace website start",
+    "start:blog:zh": "yarn workspace blog start:zh",
+    "start:blog:en": "yarn workspace blog start:en",
+    "build": "yarn workspace scripts generate-website",
+    "build:website": "yarn workspace website build",
+    "build:doc": "yarn workspace doc build",
+    "build:blog:zh": "yarn workspace blog build:zh",
+    "build:blog:en": "yarn workspace blog build:en",
+    "build:preview": "cross-env preview=true yarn run build",
+    "build:website:preview": "cross-env preview=true yarn workspace website build",
+    "build:doc:preview": "cross-env preview=true yarn workspace doc build",
+    "build:blog:zh:preview": "cross-env preview=true yarn workspace blog build:zh",
+    "build:blog:en:preview": "cross-env preview=true yarn workspace blog build:en",
+    "serve": "yarn workspace website docusaurus serve",
+    "serve:website": "yarn workspace website docusaurus serve",
+    "serve:doc": "yarn workspace doc docusaurus serve",
+    "serve:blog:zh": "yarn workspace blog docusaurus serve zh",
+    "serve:blog:en": "yarn workspace blog docusaurus serve en",
+    "build:website:preview:serve": "yarn build:website:preview && yarn serve:website",
+    "build:doc:preview:serve": "yarn build:doc:preview && yarn serve:doc",
+    "build:blog:zh:preview:serve": "yarn build:blog:zh:preview && yarn serve:blog:zh",
+    "build:blog:en:preview:serve": "yarn build:blog:en:preview && yarn serve:blog:en",
+    "prepare": "husky install",
+    "prepare-data": "yarn sync-docs && yarn generate-repos-info && yarn generate-picked-posts"
+  },
+  "devDependencies": {
+    "@julian_cataldo/remark-lint-frontmatter-schema": "^3.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-yml": "^0.14.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "remark": "^14.0.2",
+    "remark-cli": "^11.0.0",
+    "remark-frontmatter": "^4.0.1",
+    "remark-preset-lint-consistent": "^5.1.1",
+    "remark-preset-lint-markdown-style-guide": "^5.1.2",
+    "remark-preset-lint-recommended": "^6.1.2",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{yml,yaml}": "eslint --cache --fix",
+    "*.{scss,css}": "stylelint --cache --fix",
+    "*.{md}": "remark ./blog/{en,zh}/blog/**/*.md --quiet"
+  }
+}

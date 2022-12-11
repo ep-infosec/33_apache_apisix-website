@@ -1,0 +1,94 @@
+{
+  "title": {
+    "message": "Apache APISIX®",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Case Studies": {
+    "message": "用户案例",
+    "description": "Apache APISIX® Case Studies"
+  },
+  "item.label.Resources": {
+    "message": "相关资源",
+    "description": "Navbar item with label Resources"
+  },
+  "item.label.PluginHub": {
+    "message": "插件市场",
+    "description": "Navbar item with label Plugin Hub"
+  },
+  "item.label.Community": {
+    "message": "加入社区",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Events": {
+    "message": "社区活动",
+    "description": "Navbar item with label Events"
+  },
+  "item.label.Downloads": {
+    "message": "下载",
+    "description": "Navbar item with label Downloads"
+  },
+  "item.label.Team": {
+    "message": "团队",
+    "description": "Navbar item with label Team"
+  },
+  "item.label.Showcase": {
+    "message": "使用案例",
+    "description": "Navbar item with label Showcase"
+  },
+  "item.label.Help": {
+    "message": "帮助",
+    "description": "Navbar item with label Help"
+  },
+  "item.label.APISIX": {
+    "message": "APISIX",
+    "description": "Navbar item with label APISIX"
+  },
+  "item.label.APISIX Dashboard": {
+    "message": "APISIX Dashboard",
+    "description": "Navbar item with label APISIX Dashboard"
+  },
+  "item.label.Apache APISIX®️": {
+    "message": "Apache APISIX®️",
+    "description": "Navbar item with label Apache APISIX®️"
+  },
+  "item.label.Apache APISIX®️ Dashboard": {
+    "message": "Apache APISIX®️ Dashboard",
+    "description": "Navbar item with label Apache APISIX®️ Dashboard"
+  },
+  "item.label.Apache APISIX®️ Ingress Controller": {
+    "message": "Apache APISIX®️ Ingress Controller",
+    "description": "Navbar item with label Apache APISIX®️ Ingress Controller"
+  },
+  "item.label.Apache APISIX®️ Helm Charts": {
+    "message": "Apache APISIX®️ Helm Charts",
+    "description": "Navbar item with label Apache APISIX®️ Helm Charts"
+  },
+  "item.label.Apache APISIX®️ Docker": {
+    "message": "Apache APISIX®️ Docker",
+    "description": "Navbar item with label Apache APISIX®️ Docker"
+  },
+  "item.label.Apache APISIX®️ Java Plugin Runner": {
+    "message": "Apache APISIX®️ Java Plugin Runner",
+    "description": "Navbar item with label Apache APISIX®️ Java Plugin Runner"
+  },
+  "item.label.Apache APISIX®️ Go Plugin Runner": {
+    "message": "Apache APISIX®️ Go Plugin Runner",
+    "description": "Navbar item with label Apache APISIX®️ Go Plugin Runner"
+  },
+  "item.label.Apache APISIX®️ Python Plugin Runner": {
+    "message": "Apache APISIX®️ Python Plugin Runner",
+    "description": "Navbar item with label Apache APISIX®️ Python Plugin Runner"
+  },
+  "item.label.General": {
+    "message": "General",
+    "description": "Navbar item with label General"
+  }
+}
